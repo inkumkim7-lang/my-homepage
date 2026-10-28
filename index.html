@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="개인 소개와 작업을 담은 홈페이지입니다.">
+    <title>나의 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="홈으로 이동">나의 홈페이지</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        메뉴
+      </button>
+      <nav class="navigation" id="primary-navigation" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#work">작업</a>
+        <a href="#contact">연락</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <p class="eyebrow">반가워요, 방문해 주셔서 감사합니다</p>
+        <h1>안녕하세요,<br><span>저를 소개합니다.</span></h1>
+        <p class="hero-copy">
+          관심 있는 일을 꾸준히 배우고, 생각을 작은 결과물로 만들어 가고 있습니다.
+        </p>
+        <a class="button-link" href="#about">더 알아보기 <span aria-hidden="true">↓</span></a>
+        <div class="hero-decoration" aria-hidden="true">안녕하세요!</div>
+      </section>
+
+      <section class="content-section section-wrap" id="about">
+        <p class="eyebrow">ABOUT</p>
+        <h2>저에 대해</h2>
+        <p class="section-copy">
+          이곳에 나를 소개하는 내용을 적어 보세요. 요즘 관심을 두고 있는 분야나
+          중요하게 생각하는 가치, 앞으로 해 보고 싶은 일을 방문자와 나눌 수 있습니다.
+        </p>
+      </section>
+
+      <section class="content-section work-section section-wrap" id="work">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>관심사와 작업</h2>
+        <div class="work-grid">
+          <article class="work-card">
+            <span class="card-number">01</span>
+            <h3>배우는 일</h3>
+            <p>새로운 것을 탐구하고 배운 내용을 차근차근 정리합니다.</p>
+          </article>
+          <article class="work-card">
+            <span class="card-number">02</span>
+            <h3>만드는 일</h3>
+            <p>아이디어를 작게 시작해 쓸모 있는 결과물로 발전시킵니다.</p>
+          </article>
+          <article class="work-card">
+            <span class="card-number">03</span>
+            <h3>나누는 일</h3>
+            <p>경험과 생각을 나누며 함께 성장하는 것을 좋아합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>이야기를 나눠요</h2>
+        <p>함께 나누고 싶은 이야기가 있다면 편하게 연락해 주세요.</p>
+        <a class="button-link button-light" href="mailto:inkumkim7@gmail.com">이메일 보내기 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <span>나의 홈페이지</span>
+      <span>© <span id="current-year"></span> 나의 홈페이지</span>
+    </footer>
+  </body>
+</html>
